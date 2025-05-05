@@ -2,14 +2,6 @@
 const select = (selector) => document.querySelector(selector);
 const selectAll = (selector) => document.querySelectorAll(selector);
 
-// Mobile Menu Toggle
-const mobileMenuBtn = select('.mobile-menu-btn');
-const navLinks = select('.nav-links');
-
-mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
-
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -20,8 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth',
                 block: 'start'
             });
-            // Close mobile menu if open
-            navLinks.classList.remove('show');
         }
     });
 });
