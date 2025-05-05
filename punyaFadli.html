@@ -1,35 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Portfolio Hosea" />
+    <title>Portfolio Hosea</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/fadli.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-
-<nav class="navbar">
-    <div class="logo">Portfolio</div>
-    <ul class="nav-links">
-        <li><a href="main.html">Beranda</a></li>
-        <li class="dropdown">
-            <a href="#">Tentang</a>
-            <ul class="dropdown-content">
-                <li><a href="punyaHosea.html">Hosea</a></li>
-                <li><a href="punyaRehan.html">Rehan</a></li>
-                <li><a href="punyaRusdi.html">Rusdi</a></li>
-                <li><a href="punyaFadli.html">Fadli</a></li>
+    <!-- Navbar (Sama untuk semua halaman) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="main.html">Kelompok Kami</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Tentang <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="punyaHosea.html" class="active">Hosea</a></li>
+                        <li><a href="punyaRehan.html">Rehan</a></li>
+                        <li><a href="punyaRusdi.html">Rusdi</a></li>
+                        <li><a href="punyaFadli.html">Fadli</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
-        </li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#contact">Kontak</a></li>
-    </ul>
-</nav>
+        </div>
+    </nav>
 
-<section>
-    <!-- Konten utama bisa ditambahkan di sini -->
-    <h1>Selamat datang di halaman utama!</h1>
-</section>
+    <!-- Personal Hero Section -->
+    <section class="personal-hero">
+        <div class="personal-hero-content">
+            <div class="profile-image">
+                <img src="img/WhatsApp Image 2025-05-05 at 14.08.17.jpeg" alt="Fadli">
+            </div>
+            <h1>Fadli</h1>
+            <p class="personal-tagline">Web Developer & UI Designer</p>
+            <div class="personal-social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
 
-<script src="main/main.js"></script>
+    <!-- Personal About Section -->
+    <section class="personal-about" id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="personal-info">
+                <div class="info-item">
+                    <h3>Pendidikan</h3>
+                    <p>Universitas Nurtanio</p>
+                    <p>Jurusan Teknik Informatika</p>
+                </div>
+                <div class="info-item">
+                    <h3>Keahlian</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar" data-percent="90%"></div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="skill-bar" data-percent="85%"></div>
+                        </div>
+                        <div class="skill">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Sama untuk semua halaman) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Kelompok Kami</h3>
+                    <p>Membangun masa depan digital</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kelompok Kami. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
