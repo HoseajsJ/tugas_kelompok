@@ -1,8 +1,6 @@
-// Utility Functions
 const select = (selector) => document.querySelector(selector);
 const selectAll = (selector) => document.querySelectorAll(selector);
 
-// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -16,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar Scroll Effect
+
 const navbar = select('.navbar');
 let lastScroll = 0;
 
@@ -32,7 +30,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Project Filtering
 const filterButtons = selectAll('.filter-btn');
 const projectCards = selectAll('.project-card');
 
@@ -54,7 +51,6 @@ filterButtons.forEach(button => {
     });
 });
 
-// Form Handling
 const contactForm = select('#contactForm');
 
 contactForm.addEventListener('submit', async (e) => {
@@ -67,7 +63,7 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        // Simulate form submission
+        
         await new Promise(resolve => setTimeout(resolve, 1000));
         showNotification('Pesan berhasil terkirim!', 'success');
         contactForm.reset();
@@ -76,7 +72,7 @@ contactForm.addEventListener('submit', async (e) => {
     }
 });
 
-// Notification System
+
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
@@ -91,7 +87,7 @@ function showNotification(message, type = 'info') {
     }, 3000);
 }
 
-// Intersection Observer for Animations
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -106,11 +102,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements
 document.querySelectorAll('.project-card, .about-content, .contact-wrapper')
     .forEach(el => observer.observe(el));
 
-// Typing Effect for Hero Text
+
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.textContent = '';
@@ -126,14 +121,14 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typing effect
+
 const heroText = select('.typing-text');
 if (heroText) {
     const text = heroText.textContent;
     typeWriter(heroText, text);
 }
 
-// Initialize on DOM Load
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Add any initialization code here
+    
 }); 

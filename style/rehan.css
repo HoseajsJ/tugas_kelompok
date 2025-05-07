@@ -21,7 +21,7 @@
     margin: 0 auto 2rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--secondary-color);
+    border: 4px solid var(--light-text);;
 }
 
 .profile-image img {
@@ -56,7 +56,9 @@
 /* Personal About Section */
 .personal-about {
     padding: 100px 0;
-    background-color: var(--background-color);
+    background-color: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .personal-info {
@@ -67,10 +69,24 @@
 }
 
 .info-item {
-    background: white;
+    background: #90e0ef;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(2, 191, 224, 0.1);
+}
+
+.header{
+    border      : 1px solid #dedede;
+    padding     : 10px;
+    margin      : 10px;
+    background  : #90e0ef;
+}
+
+.container{
+    max-width   : 1080px;
+    margin      : 20px auto;
+    overflow    : hidden;
+    padding     : 10px;
 }
 
 /* Skill Bars */
@@ -89,7 +105,7 @@
 
 .skill-bar {
     height: 10px;
-    background: #eee;
+    background: #f80a02;
     border-radius: 5px;
     position: relative;
 }
@@ -169,4 +185,4 @@
     .personal-tagline {
         font-size: 1rem;
     }
-} 
+}

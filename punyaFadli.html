@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-    <!-- Navbar (Sama untuk semua halaman) -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -21,18 +21,17 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Tentang <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
-                        <li><a href="punyaHosea.html" class="active">Hosea</a></li>
+                        <li><a href="punyaHosea.html">Hosea</a></li>
                         <li><a href="punyaRehan.html">Rehan</a></li>
                         <li><a href="punyaRusdi.html">Rusdi</a></li>
-                        <li><a href="punyaFadli.html">Fadli</a></li>
+                        <li><a href="punyaFadli.html" class="active">Fadli</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">Kontak</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Personal Hero Section -->
+    <!-- Hero Section -->
     <section class="personal-hero">
         <div class="personal-hero-content">
             <div class="profile-image">
@@ -43,12 +42,12 @@
             <div class="personal-social-links">
                 <a href="#"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/fadlifikrii/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- Personal About Section -->
+    <!-- About Section -->
     <section class="personal-about" id="about">
         <div class="container">
             <h2>Tentang Saya</h2>
@@ -56,27 +55,39 @@
                 <div class="info-item">
                     <h3>Pendidikan</h3>
                     <p>Universitas Nurtanio</p>
-                    <p>Jurusan Teknik Informatika</p>
+                    <p>Jurusan Teknik Informatika 2022/2023</p>
+
+                    <h4>Hobby</h4>
+                    <p>Gaming</p>
+                    <p>Yapping</p>
                 </div>
                 <div class="info-item">
-                    <h3>Keahlian</h3>
-                    <div class="skill-bars">
-                        <div class="skill">
-                            <span>HTML/CSS</span>
-                            <div class="skill-bar" data-percent="90%"></div>
+                    <h5>Keahlian</h5>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                          <span class="skill-label">HTML/CSS</span>
+                          <span class="skill-percent">80%</span>
                         </div>
-                        <div class="skill">
-                            <span>JavaScript</span>
-                            <div class="skill-bar" data-percent="85%"></div>
+                        <div class="skill-track">
+                          <div class="skill-fill" style="width: 80%;"></div>
                         </div>
-                        <div class="skill">
-                    </div>
+                      </div>
+                      
+                      <div class="skill-bar">
+                        <div class="skill-info">
+                          <span class="skill-label">JavaScript</span>
+                          <span class="skill-percent">79%</span>
+                        </div>
+                        <div class="skill-track">
+                          <div class="skill-fill" style="width: 79%;"></div>
+                        </div>
+                      </div>    
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Sama untuk semua halaman) -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -87,7 +98,7 @@
                 <div class="social-links">
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/fadlifikrii/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -96,6 +107,7 @@
         </div>
     </footer>
 
+    <div id="notificationContainer"></div>
     <script src="js/script.js"></script>
 </body>
 </html>
